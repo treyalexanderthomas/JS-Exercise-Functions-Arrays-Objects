@@ -236,11 +236,8 @@ function get3rdCar(inventory) {
 */
 function getCarInfoByIndex(inventory, index) {
   /* code here */
-  for (i=0; i < inventory.length[i]; i++){
-    const info = inventory[i]
-    return `This is a ${car_make[i]}${car_model[i]}`
-    console.log(info)
-  }
+  const car = inventory[index]
+  return `This is a ${car.car_make} ${car.car_model}`
 }
 
 /**
@@ -256,11 +253,11 @@ function getCarInfoByIndex(inventory, index) {
 */
 function getLastCarInfo(inventory) {
   /* code here */
-  for (i=0; i < inventory.length; i++) {
-  const info = inventory[i]
-  return ` This is ${car_make}${car_model}`
+  const car = inventory[inventory.length - 1]
+  return ` This is a ${car.car_make} ${car.car_model}`
   }
-}
+
+
 
 /**
  * ### Challenge `getModelYears`
